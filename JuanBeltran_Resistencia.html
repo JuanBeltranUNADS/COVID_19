@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Juan Beltrán - UNAD</title>
+  </head>
+  <body>
+      <div class="container-fluid bg-primary text-center py-5">
+          <div class="container text-white">
+                <h2>Desarrollo de interfaz cliente</h2>
+              </div>
+              </div>              
+              
+              <!-- Conteneder de botones de menu -->
+              
+              <div class="container-fluid text-center py-5">
+              <div class="container text-center"></div>
+              <div class="btn-group btn-group-lg">
+                  <a class="nav-link" href="Administrador.html">Administrador</a>
+                </li>
+                <a class="nav-link" href="Inventario.html">Inventario</a>
+              </li>
+              <a class="nav-link" href="Ventas.html">Ventas</a>
+          </li>
+            <a class="nav-link" href="Utilidades.html">Utilidades</a>
+          </li>
+
+          <a class="nav-link" href="JuanBeltran_Resistencia.html">Retorno a menu principal</a>
+          </li>
+                  </div>
+                    <!-- Titulo, calculadora de resistencias-->
+                    <div  class="container">
+                        
+                      <h1 class="display-3">Calculadora de resistencias</h1>
+                      <h2>Tabla de resistencias</h2>
+                    </div>
+
+
+                      <script>
+                          function calcular(){
+                              
+                              var a = document.f1.b1.value;
+                              var b = document.f1.b2.value;
+                              var x = document.f1.b3.value;
+                              var r = document.f1.c.value;
+                              r1= a.toString()+b.toString();
+                              r=parseFloat(r1)*parseFloat(x);
+                             document.f1.c.value=r;
+                              
+                          }
+                          
+                          </script> 
+                          
+                          
+                          
+                          <form name="f1" action="resistencia.html" method="POST">
+                              <div class="container">
+                              <div class="container text-center py-5"></div>
+                          <div class="row">
+                              
+                              <div class="col-2 bg-primary">Color</div>
+                              <div class="col-2 bg-success">1ra banda</div>
+                              <div class="col-2 bg-info">2da banda</div>
+                              <div class="col-2 bg-warning">3ra - Multiplicador</div>
+                              <div class="col-4 bg-danger">Tolerancia</div>
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-dark text-white">Negro</div>
+                                <div class="col-2 bg-dark text-white">0</div>
+                                <div class="col-2 bg-dark text-white">0</div>
+                                <div class="col-2 bg-dark text-white">*1</div>
+                                <div class="col-4 bg-dark text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-secondary text-white">Cafe</div>
+                                <div class="col-2 bg-secondary text-white">1</div>
+                                <div class="col-2 bg-secondary text-white">1</div>
+                                <div class="col-2 bg-secondary text-white">*10</div>
+                                <div class="col-4 bg-secondary text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-danger text-white">Rojo</div>
+                                <div class="col-2 bg-danger text-white">2</div>
+                                <div class="col-2 bg-danger text-white">2</div>
+                                <div class="col-2 bg-danger text-white">*100</div>
+                                <div class="col-4 bg-danger text-white">2%</div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-warning text-white">Naranja</div>
+                                <div class="col-2 bg-warning text-white">3</div>
+                                <div class="col-2 bg-warning text-white">3</div>
+                                <div class="col-2 bg-warning text-white">*1000</div>
+                                <div class="col-4 bg-warning text-white"></div>
+                             
+                            </div>
+                            
+                            <div class="row">
+                              
+                                <div class="col-2 bg-dark text-white">Amarillo</div>
+                                <div class="col-2 bg-dark text-white">4</div>
+                                <div class="col-2 bg-dark text-white">4</div>
+                                <div class="col-2 bg-dark text-white">*10000</div>
+                                <div class="col-4 bg-dark text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-success text-white">Verde</div>
+                                <div class="col-2 bg-success text-white">5</div>
+                                <div class="col-2 bg-success text-white">5</div>
+                                <div class="col-2 bg-success text-white">*100000</div>
+                                <div class="col-4 bg-success text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-primary text-white">Azul</div>
+                                <div class="col-2 bg-primary text-white">6</div>
+                                <div class="col-2 bg-primary text-white">6</div>
+                                <div class="col-2 bg-primary text-white">*1000000</div>
+                                <div class="col-4 bg-primary text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-info text-white">Violeta</div>
+                                <div class="col-2 bg-info text-white">7</div>
+                                <div class="col-2 bg-info text-white">7</div>
+                                <div class="col-2 bg-info text-white">*10000000</div>
+                                <div class="col-4 bg-info text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-secondary text-white">Gris</div>
+                                <div class="col-2 bg-secondary text-white">8</div>
+                                <div class="col-2 bg-secondary text-white">8</div>
+                                <div class="col-2 bg-secondary text-white">*100000000</div>
+                                <div class="col-4 bg-secondary text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-2 bg-dark text-white">Blanco</div>
+                                <div class="col-2 bg-dark text-white">9</div>
+                                <div class="col-2 bg-dark text-white">9</div>
+                                <div class="col-2 bg-dark text-white">*1000000000</div>
+                                <div class="col-4 bg-dark text-white"></div>
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-8 bg-success text-white">Circuitos</div>
+                                <div class="col-4 bg-warning text-white">Dorado 5%</div>
+                                
+                             
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col-8 bg-success text-white">basicos</div>
+                                <div class="col-4 bg-secondary text-white">Plata 10%</div>
+                                
+                             
+                            </div>
+                          </div>
+                        </div>
+                         
+                        <div class="container text-center">
+                            <h3>Cada tipo de banda se presenta con un tipo de estilo diferente</h3>  
+                            
+                        <div class="container-fluid bg-secondary text-center py-5">
+                        <div class="container text-center">
+                           <h4>Banda #1</h4>     
+                          <select name="b1" class="form-control">
+                              <div class="container text-center">
+                            <option value="0" style="color: white text-black">Negro</option>
+                            <option value="1" style="color: white text-black">Cafe</option>
+                            <option value="2" style="color: white text-black">Rojo</option>
+                            <option value="3" style="color: white text-black" >Naranja</option>
+                            <option value="4" style="color: white text-black">Amarillo</option>
+                            <option value="5" style="color: white text-black">Verde</option>
+                            <option value="6" style="color: white text-black">Azul</option>
+                            <option value="7" style="color: white text-black" >Violeta</option>
+                            <option value="8" style="color: white text-black">Gris</option>
+                            <option value="9" style="color: white text-black">Blanco</option>
+                          </select>
+                        </div>
+                        </div>
+                          <br>
+                          
+                          <div class="container-fluid bg-warning text-center py-5">
+                          <div class="container text-center">
+                              <h4>Banda #2</h4>    
+                          <select name="b2" class="form-control">
+                              <option value="0" style="background-color: black">Negro</option>
+                              <option value="1" style="background-color: brown">Cafe</option>
+                              <option value="2" style="background-color: red">Rojo</option>
+                              <option value="3" style="background-color: orangered" >Naranja</option>
+                              <option value="4" style="background-color: yellow">Amarillo</option>
+                              <option value="5" style="background-color: green">Verde</option>
+                              <option value="6" style="background-color: blue">Azul</option>
+                              <option value="7" style="background-color: violet" >Violeta</option>
+                              <option value="8" style="background-color: grey">Gris</option>
+                              <option value="9" style="background-color: whitesmoke">Blanco</option>
+                            </select>
+                          </div>
+                          </div>
+                          <br>
+                          
+                          <div class="container-fluid bg-secondary text-center py-5">
+                          <div class="container text-center">
+                              <h4>Banda #3</h4>    
+                          <select name="b3" class="form-control">
+                              <option value="0" style="color: black" >Negro</option>
+                              <option value="1" style="color: brown">Cafe</option>
+                              <option value="2" style="color: red">Rojo</option>
+                              <option value="3" style="color: orangered" >Naranja</option>
+                              <option value="4" style="color: yellow">Amarillo</option>
+                              <option value="5" style="color: green">Verde</option>
+                              <option value="6" style="color: blue">Azul</option>
+                              <option value="7" style="color: violet" >Violeta</option>
+                              <option value="8" style="color: grey">Gris</option>
+                              <option value="9" style="color: white text-black">Blanco</option>
+                            </select>
+                          </div>
+                        </div>
+                            <br><br>
+
+                            <div class="container">
+                            <input type="Button" name="" value="calcular" onclick="calcular()" class="btn btn-primary">
+                            <br><br>
+                            <label for="resultado">Resultado en ohmios:</label>
+                            <input type="text" class="form-control" id="c" name="c" placeholder="Su resultado es">
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                          
+                              </form>
+                               
+                          </div>
+                          
+                          
+                          <div class="Container">
+                              <div class="container-fluid bg-info">
+                                    <div class="Container text-center">
+                                      <div class="Container text-white">
+                                        <h1>Creado por: Juan David Beltrán Guevara</h1>
+                                        <h2>Universidad Nacional Abierta y a Distancia</h2>
+                                        <h3>29 - Octubre - 2019</h3>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </body>
+                          </html>
+                          
+                    
+                    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="jd/bootstrap.min.js"></script>
+    
+  </body>
+</html>

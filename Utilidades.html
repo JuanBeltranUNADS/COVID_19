@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Juan Beltrán - UNAD</title>
+  </head>
+  <body>
+      <div class="container-fluid bg-primary text-center py-5">
+          <div class="container text-white">
+                <h2>Desarrollo de interfaz cliente</h2>
+              </div>
+              </div>              
+              
+              <!-- Conteneder de botones de menu -->
+              
+              <div class="container-fluid text-center py-5">
+              <div class="container text-center"></div>
+              <div class="btn-group btn-group-lg">
+                  <a class="nav-link" href="Administrador.html">Administrador</a>
+                </li>
+                <a class="nav-link" href="Inventario.html">Inventario</a>
+              </li>
+              <a class="nav-link" href="Ventas.html">Ventas</a>
+          </li>
+          <a class="nav-link" href="Utilidades.html">Utilidades</a>
+        </li>
+
+          <a class="nav-link" href="JuanBeltran_Resistencia.html">Retorno a menu principal</a>
+          </li>
+                  </div>
+                    <!-- Titulo, calculadora de resistencias-->
+                    <div  class="container">
+                        
+                      <h1 class="display-4">Bienvenido</h1>
+                      <h2>Te encuentras en el enlace Utilidades</h2>
+                    </div>
+
+                    <div class="container">
+
+                      <br>
+                      <h2>Tienda Tesla</h2>
+                      <h3>Calculadora Porcentaje de Utilidad</h3>
+
+                      <script>                        
+                        function porcentajeUtilidad(){
+                            
+                            var a = document.f1.a.value;
+                            var b = document.f1.b.value;
+                            var r = document.f1.c.value;
+                           r=parseFloat(a)*(parseFloat(30)/100);
+                           document.f1.c.value=r;
+                            
+                        }
+
+                        function porcentajeIVA(){
+                            
+                            var a = document.f1.a.value;
+                            var d = document.f1.d.value;
+                            var r = document.f1.c.value;
+                           r=parseFloat(a)*(parseFloat(19)/100);
+                           document.f1.d.value=r;
+
+                           
+                            
+                        }
+                    
+                        
+                        </script> 
+                        
+                        
+                        
+                        <form name="f1" action="calculadora.html" method="POST">
+                            <div class="form-group">
+                              
+                            <label for="numero1">Valor de compra:</label>
+                            <input type="text" class="form-control" id="a" placeholder="Ingrese el valor del producto adquirido" name="a">
+
+                            <label for="numero2">Aumentos $:</label>
+                            <input type="text" class="form-control" id="b" placeholder="30% por utilidad --- 19% incremento IVA" name="b">
+                            <br>
+                          
+                          <input type="Button" name="" value="Porcentaje Utilidad" onclick="porcentajeUtilidad()" class="btn btn-success">
+                          <input type="Button" name="" value="Limpiar" onclick="reset()" class="btn btn-primary">
+                          <input type="Button" name="" value="Porcentaje IVA" onclick="porcentajeIVA()" class="btn btn-success">
+                          
+                          <br><br>
+                          <label for="resultado">Resultado:</label>
+                          <input type="text" class="form-control" id="c" name="c" placeholder="Aquí se imprime el resultado sobre ganancia - Utilidad">
+                          <input type="text" class="form-control" id="d" name="d" placeholder="Aquí se imprime el resultado sobre incremento - IVA">
+                        
+                          </div>
+                        
+                            </form>
+                    
+                    
+                          
+                    </div>
+                          
+                          <div class="Container">
+                              <div class="container-fluid bg-info">
+                                    <div class="Container text-center">
+                                      <div class="Container text-white">
+                                        <h1>Creado por: Juan David Beltrán Guevara</h1>
+                                        <h2>Universidad Nacional Abierta y a Distancia</h2>
+                                        <h3>29 - Octubre - 2019</h3>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          </body>
+                          </html>
+                          
+                    
+                    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="jd/bootstrap.min.js"></script>
+    
+  </body>
+</html>
